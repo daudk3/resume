@@ -1,0 +1,36 @@
+name: Build and Deploy Resume (Cloudflare Pages)
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX (resume.tex → resume.pdf)
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: resume.tex
+          # latexmk defaults to pdf; add extra_packages if you need them:
+          # extra_system_packages: "ghostscript"
+
+      - name: Prepare dist folder
+        run: |
+          mkdir -p dist
+          cp index.html dist/
+          cp resume.pdf dist/
+
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          projectName: resume
+          directory: dist
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
