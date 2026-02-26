@@ -54,12 +54,17 @@
 	% ===== WORK EXPERIENCE =====
 	\section{Work Experience}
 	    \divider
-	\rolelocdates{Wilfrid Laurier University Service Desk}{Student Service Desk Analyst}{January 2025 -- Present}
+    \vspace{6pt}
+    \rolelocdates{HRONK Robotics}{Robotics Systems Engineer - Contract Part-time}{January 2026 -- Present}
     \begin{itemize}
-      \item Provided front-line technical support for Windows, macOS, Linux, and mobile devices using Alemba Service Manager
-      \item Supported Azure AD (Entra ID) authentication, MFA enrollment, and account provisioning via Active Directory
-      \item Diagnosed and escalated network, printing, and AV issues with clear technical documentation
-      \item Imaged, configured, and tracked loaner laptops to maintain security compliance and inventory accuracy
+      \item Develop embedded C/C++ firmware for microcontroller-based robotic systems with real-time motor control
+      \item Integrate sensors and actuators via UART, SPI, and I2C for closed-loop operation
+      \item Build telemetry services and dashboards (Node.js, PostgreSQL, React) for device monitoring and configuration
+    \end{itemize}
+    \rolelocdates{Wilfrid Laurier University Service Desk}{Student Service Desk Analyst}{January 2025 -- Present}
+    \begin{itemize}
+      \item Provide cross-platform technical support (Windows, macOS, Linux) to over 28,000 usersresolving authentication, networking, and AV issues
+      \item Support Azure AD (Entra ID) provisioning and MFA enrollment, maintaining secure account access for students and staff
     \end{itemize}
     
     % ===== EXTRACURRICULAR =====
@@ -78,18 +83,16 @@
     \divider
     \textbf{Flight Booking \& Management System} – \textit{React, Node.js, Supabase} \hfill \href{https://github.com/daudk3/flight-management-system}{github.com/daudk3/flight-management-system}\\
     \begin{itemize}
-      \item Co-developed a full-stack web application enabling end-to-end flight search, booking, and management workflows
-      \item Designed and implemented the booking pipeline, integrating Supabase authentication, authorization policies, and client-side security checks within a React front-end
-      \item Built Supabase Edge Functions to ingest and normalize real-time flight data from the Aviationstack API
-      \item Modeled and implemented PostgreSQL schemas for flights, users, bookings, and role-based access control
+      \item Built a full-stack flight booking system with authenticated search and booking workflows
+      \item Designed PostgreSQL schemas (5+ entities) with RBAC-enforced access control
+      \item Implemented Supabase Edge Functions to ingest and normalize external flight data via REST APIs
     \end{itemize}
-    
+
     \textbf{JellyCLI} – \textit{Python, REST APIs, Textual} \hfill \href{https://github.com/daudk3/JellyCLI}{github.com/daudk3/JellyCLI}\\
     \begin{itemize}
-      \item Developed a cross-platform Python TUI client for interacting with a remote media server via REST APIs, supporting local playback through MPV
-      \item Implemented authenticated API requests, paginated data access, and structured error handling to ensure reliable client–server communication
-      \item Designed and implemented OIDC-based single sign-on for a native terminal client, enabling secure, passwordless authentication with external identity providers
-      \item Designed a modular architecture separating API communication, data models, and command execution for maintainability and extensibility
+      \item Developed a modular Python TUI client for a remote media server using authenticated REST APIs
+      \item Implemented OIDC-based SSO and structured error handling for secure client–server communication
+      \item Separated API, data models, and command layers to improve maintainability and extensibility
     \end{itemize}
 
 
@@ -97,8 +100,9 @@
 	\section{Technical Skills}
     \divider
     \begin{itemize}
-    \item \textbf{Languages:} Python, C, Java, JavaScript, SQL \\
-    \item \textbf{Systems \& Platforms:} Linux, Docker, Git, REST APIs, PostgreSQL, Supabase \\
-    \item \textbf{Application \& Cloud:} React, Node.js, Microsoft Azure, Entra ID
+    \item \textbf{Languages:} Python, C, C++, Java, JavaScript, SQL \\
+    \item \textbf{Systems:} Linux, Embedded Systems, UART, SPI, I2C, REST APIs, Docker, Git \\
+    \item \textbf{Backend \& Web:} Node.js, React, PostgreSQL, Supabase \\
+    \item \textbf{Cloud \& Identity:} Microsoft Azure, Entra ID, OIDC
     \end{itemize}
 \end{document}
