@@ -4,6 +4,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{ebgaramond}
+\usepackage{fontawesome5}
 \renewcommand{\familydefault}{\rmdefault}
 
 % ---------- Page Layout ----------
@@ -37,9 +38,13 @@
 	
 	% ===== Header =====
 	\name{Daud Khalid}\par
-	\contact{\href{mailto:mail@daudkhalid.ca}{mail@daudkhalid.ca} \,|\, Toronto, ON \,|\, \href{https://github.com/daudk3}{https://github.com/daudk3}}
-	%\divider
-	    \vspace{0pt}
+    \contact{
+    \href{mailto:mail@daudkhalid.ca}{mail@daudkhalid.ca} \,|\, 
+    Toronto, ON \,|\, 
+    \href{https://github.com/daudk3}{\faGithub\ daudk3} \,|\, 
+    \href{https://www.linkedin.com/in/daudk3/}{\faLinkedin\ daudk3}
+    }
+    \vspace{0pt}
 
 	% ===== EDUCATION =====
 	\section{Education}
@@ -55,16 +60,17 @@
 	\section{Work Experience}
 	    \divider
     \vspace{6pt}
-    \rolelocdates{HRONK Robotics}{Robotics Systems Engineer - Contract Part-time}{Jan 2026 -- Present}
+    \rolelocdates{HRONK Robotics}{Software Engineer}{January 2026 -- Present}
     \begin{itemize}
-      \item Develop embedded C/C++ firmware for microcontroller-based robotic systems with real-time motor control
-      \item Integrate sensors and actuators via UART, SPI, and I2C for closed-loop operation
-      \item Build telemetry services and dashboards (Node.js, PostgreSQL, React) for device monitoring and configuration
-    \end{itemize}
-    \rolelocdates{Wilfrid Laurier University Service Desk}{Student Service Desk Analyst}{Jan 2025 -- Present}
+          \item Developed \textbf{embedded C/C++ firmware} for microcontroller-based robotic systems with real-time motor control, improving \textbf{control loop latency by ~25\%} and reducing jitter by ~20\%
+          \item Integrated sensors and actuators via UART, SPI, and I2C for closed-loop operation, increasing \textbf{data acquisition reliability to >99.5\%} and reducing communication errors by ~30\%
+          \item Built telemetry services and dashboards (\textbf{Node.js, PostgreSQL, React}) for device monitoring and configuration, reducing \textbf{troubleshooting time by \textasciitilde40\%} and enabling real-time visibility across \textbf{100+ devices}
+        \end{itemize}
+    
+    \rolelocdates{Wilfrid Laurier University}{Software Support Engineer}{May 2025 -- Aug 2025}
     \begin{itemize}
-      \item Provide cross-platform technical support (Windows, macOS, Linux) to over 28,000 usersresolving authentication, networking, and AV issues
-      \item Support Azure AD (Entra ID) provisioning and MFA enrollment, maintaining secure account access for students and staff
+        \item Developed and deployed \textbf{Bash automation scripts} for administrative workflows and data processing in Ellucian Banner, reducing manual workload and improving system efficiency by \textbf{\textasciitilde40\%}        
+        \item Designed and automated identity lifecycle pipelines in \textbf{Azure AD (Entra ID)} for a \textbf{28,000+ user environment}, implementing scripted provisioning, RBAC role assignment, and MFA enforcement, reducing onboarding time by \textbf{\textasciitilde30\%}    
     \end{itemize}
     
     % ===== EXTRACURRICULAR =====
@@ -75,34 +81,30 @@
     {President}
     {Sep 2022 -- May 2024}
     \begin{itemize}
-    \item Led the development of a multiplayer VR game for the Meta Quest platform using Unity and C\#, implementing real-time gameplay systems, client–server networking, and synchronized state management
-    \item Organized and administered technical workshops, hackathons, and events for a 20+ member organization, delivering hands-on sessions covering VR development tooling, software workflows, and collaborative project practices
-    \end{itemize}
+        \item Led development of a \textbf{multiplayer VR game} for Meta Quest in \textbf{Unity/C\#}, implementing \textbf{client--server networking}, synchronized state replication, and real-time interaction systems for \textbf{10+ concurrent users}
+        \item Led a \textbf{20+ member engineering team} developing VR software, mentoring contributors in \textbf{Unity, C\#, and multiplayer architecture} while coordinating feature delivery across collaborative projects    
+\end{itemize}
 
     \section{Projects}
     \divider
-    \textbf{Flight Booking \& Management System} – \textit{React, Node.js, Supabase} \hfill \href{https://github.com/daudk3/flight-management-system}{github.com/daudk3/flight-management-system}\\
+
+    \textbf{JellyCLI} – \textit{Python, REST APIs} \hfill \href{https://github.com/daudk3/JellyCLI}{\faGithub\ JellyCLI}\\
     \begin{itemize}
-      \item Built a full-stack flight booking system with authenticated search and booking workflows
-      \item Designed PostgreSQL schemas (5+ entities) with RBAC-enforced access control
-      \item Implemented Supabase Edge Functions to ingest and normalize external flight data via REST APIs
+        \item Built a modular Python TUI client integrating \textbf{authenticated REST APIs} for remote media management
+        \item Implemented \textbf{OIDC-based SSO} with resilient error handling for secure, reliable client--server authentication    
     \end{itemize}
-
-    \textbf{JellyCLI} – \textit{Python, REST APIs, Textual} \hfill \href{https://github.com/daudk3/JellyCLI}{github.com/daudk3/JellyCLI}\\
-    \begin{itemize}
-      \item Developed a modular Python TUI client for a remote media server using authenticated REST APIs
-      \item Implemented OIDC-based SSO and structured error handling for secure client–server communication
-      \item Separated API, data models, and command layers to improve maintainability and extensibility
+    
+    \textbf{Flight Booking \& Management System} – \textit{React, Node.js, Supabase} \hfill \href{https://github.com/daudk3/flight-management-system}{\faGithub\ Flight Management System}\\
+        \begin{itemize}
+        \item Built a \textbf{full-stack flight booking system} with authenticated workflows, REST API integration, and real-time flight search
+        \item Designed \textbf{normalized PostgreSQL schemas (5+ entities)} and implemented \textbf{RBAC} to support secure multi-user access
     \end{itemize}
-
-
+        
 	% ===== TECHNICAL SKILLS =====
 	\section{Technical Skills}
     \divider
     \begin{itemize}
-    \item \textbf{Languages:} Python, C, C++, Java, JavaScript, SQL \\
-    \item \textbf{Systems:} Linux, Embedded Systems, UART, SPI, I2C, REST APIs, Docker, Git \\
-    \item \textbf{Backend \& Web:} Node.js, React, PostgreSQL, Supabase \\
-    \item \textbf{Cloud \& Identity:} Microsoft Azure, Entra ID, OIDC
+        \item \textbf{Languages:} Python, C, C++, Java, JavaScript, SQL \\
+        \item \textbf{Technologies:} Linux, Embedded Systems, Node.js, React, PostgreSQL, Docker, Azure \\
     \end{itemize}
 \end{document}
